@@ -13,15 +13,15 @@ API References are available from their respective GitHubs.
 
 # Setting up OSRM Service with Docker
 
-docker run -t -v "${PWD}:/data" ghcr.io/project-osrm/osrm-backend osrm-extract -p /opt/car.lua /data/southern-zone-latest.osm.pbf || echo "osrm-extract failed"
+`docker run -t -v "${PWD}:/data" ghcr.io/project-osrm/osrm-backend osrm-extract -p /opt/car.lua /data/southern-zone-latest.osm.pbf || echo "osrm-extract failed"`
 
-docker run -t -v "${PWD}:/data" ghcr.io/project-osrm/osrm-backend osrm-partition /data/southern-zone-latest.osrm || echo "osrm-partition failed"
+`docker run -t -v "${PWD}:/data" ghcr.io/project-osrm/osrm-backend osrm-partition /data/southern-zone-latest.osrm || echo "osrm-partition failed"`
 
-docker run -t -v "${PWD}:/data" ghcr.io/project-osrm/osrm-backend osrm-customize /data/southern-zone-latest.osrm || echo "osrm-customize failed"
+`docker run -t -v "${PWD}:/data" ghcr.io/project-osrm/osrm-backend osrm-customize /data/southern-zone-latest.osrm || echo "osrm-customize failed"`
 
 **Finally, You have the run the following everytime to start the OSRM Server** 
 
-docker run -t -i -p 5000:5000 -v "${PWD}:/data" ghcr.io/project-osrm/osrm-backend osrm-routed --algorithm mld /data/southern-zone-latest.osrm
+`docker run -t -i -p 5000:5000 -v "${PWD}:/data" ghcr.io/project-osrm/osrm-backend osrm-routed --algorithm mld /data/southern-zone-latest.osrm`
 
 Note: `southern-zone-latest.osrm` is the South Asian region of India, you can select any country or region based on your computer's processing powers. Bigger the region, slower the server builds!
 
