@@ -1,0 +1,227 @@
+{
+    "code": 0,
+    "summary": {
+        "cost": 13207,
+        "routes": 2,
+        "unassigned": 0,
+        "delivery": [
+            9
+        ],
+        "amount": [
+            9
+        ],
+        "pickup": [
+            0
+        ],
+        "setup": 0,
+        "service": 1500,
+        "duration": 13207,
+        "waiting_time": 0,
+        "priority": 0,
+        "violations": [],
+        "computing_times": {
+            "loading": 41,
+            "solving": 3,
+            "routing": 0
+        }
+    },
+    "unassigned": [],
+    "routes": [
+        {
+            "vehicle": 1,
+            "cost": 7306,
+            "delivery": [
+                5
+            ],
+            "amount": [
+                5
+            ],
+            "pickup": [
+                0
+            ],
+            "setup": 0,
+            "service": 900,
+            "duration": 7306,
+            "waiting_time": 0,
+            "priority": 0,
+            "steps": [
+                {
+                    "type": "start",
+                    "location": [
+                        77.70228200000001,
+                        12.7831358
+                    ],
+                    "setup": 0,
+                    "service": 0,
+                    "waiting_time": 0,
+                    "load": [
+                        5
+                    ],
+                    "arrival": 1600416000,
+                    "duration": 0,
+                    "violations": []
+                },
+                {
+                    "type": "job",
+                    "location": [
+                        77.47897809999999,
+                        12.9097719
+                    ],
+                    "id": 5,
+                    "setup": 0,
+                    "service": 300,
+                    "waiting_time": 0,
+                    "job": 5,
+                    "load": [
+                        2
+                    ],
+                    "arrival": 1600418223,
+                    "duration": 2223,
+                    "violations": []
+                },
+                {
+                    "type": "job",
+                    "location": [
+                        77.4971795,
+                        12.9234009
+                    ],
+                    "id": 4,
+                    "setup": 0,
+                    "service": 300,
+                    "waiting_time": 0,
+                    "job": 4,
+                    "load": [
+                        1
+                    ],
+                    "arrival": 1600418785,
+                    "duration": 2485,
+                    "violations": []
+                },
+                {
+                    "type": "job",
+                    "location": [
+                        77.4538699,
+                        13.068898
+                    ],
+                    "id": 3,
+                    "setup": 0,
+                    "service": 300,
+                    "waiting_time": 0,
+                    "job": 3,
+                    "load": [
+                        0
+                    ],
+                    "arrival": 1600420716,
+                    "duration": 4116,
+                    "violations": []
+                },
+                {
+                    "type": "end",
+                    "location": [
+                        77.70228200000001,
+                        12.7831358
+                    ],
+                    "setup": 0,
+                    "service": 0,
+                    "waiting_time": 0,
+                    "load": [
+                        0
+                    ],
+                    "arrival": 1600424206,
+                    "duration": 7306,
+                    "violations": []
+                }
+            ],
+            "violations": []
+        },
+        {
+            "vehicle": 2,
+            "cost": 5901,
+            "delivery": [
+                4
+            ],
+            "amount": [
+                4
+            ],
+            "pickup": [
+                0
+            ],
+            "setup": 0,
+            "service": 600,
+            "duration": 5901,
+            "waiting_time": 0,
+            "priority": 0,
+            "steps": [
+                {
+                    "type": "start",
+                    "location": [
+                        77.70228200000001,
+                        12.7831358
+                    ],
+                    "setup": 0,
+                    "service": 0,
+                    "waiting_time": 0,
+                    "load": [
+                        4
+                    ],
+                    "arrival": 1600416000,
+                    "duration": 0,
+                    "violations": []
+                },
+                {
+                    "type": "job",
+                    "location": [
+                        77.656476,
+                        13.0521424
+                    ],
+                    "id": 2,
+                    "setup": 0,
+                    "service": 300,
+                    "waiting_time": 0,
+                    "job": 2,
+                    "load": [
+                        2
+                    ],
+                    "arrival": 1600418604,
+                    "duration": 2604,
+                    "violations": []
+                },
+                {
+                    "type": "job",
+                    "location": [
+                        77.7537243,
+                        13.0452482
+                    ],
+                    "id": 1,
+                    "setup": 0,
+                    "service": 300,
+                    "waiting_time": 0,
+                    "job": 1,
+                    "load": [
+                        0
+                    ],
+                    "arrival": 1600419964,
+                    "duration": 3664,
+                    "violations": []
+                },
+                {
+                    "type": "end",
+                    "location": [
+                        77.70228200000001,
+                        12.7831358
+                    ],
+                    "setup": 0,
+                    "service": 0,
+                    "waiting_time": 0,
+                    "load": [
+                        0
+                    ],
+                    "arrival": 1600422501,
+                    "duration": 5901,
+                    "violations": []
+                }
+            ],
+            "violations": []
+        }
+    ]
+}
